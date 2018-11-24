@@ -11,6 +11,14 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./public/css'));
 });
 
+gulp.task('scripts', function () {
+  return gulp.src('./scripts/**/*.js')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('./public/scripts'));
+});
+
 gulp.task('images', () =>
     gulp.src('./images/**/*')
         .pipe(imagemin())
