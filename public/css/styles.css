@@ -1,5 +1,6 @@
 .navbar-brand #logo-svg {
   fill: #FFF;
+  height: 65px;
 }
 #container {
   overflow-y: scroll;
