@@ -1,0 +1,116 @@
+.navbar-brand #logo-svg {
+  fill: #FFF;
+}
+#container {
+  overflow-y: scroll;
+  height: 100vh;
+}
+.up-arrow {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #D4AF8E;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  z-index: 100;
+  cursor: pointer;
+  visibility: hidden;
+}
+.up-arrow svg {
+  height: 30px;
+  width: 30px;
+}
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(#be1e2d, #8f0203);
+  color: #fff;
+  text-align: center;
+}
+.hero .pipe {
+  background: #D4AF8E;
+  width: 4px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 2px;
+}
+.hero .down-arrow {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #D4AF8E;
+  cursor: pointer;
+}
+#hero-image {
+  width: 75%;
+  -webkit-filter: drop-shadow(5px 95px 65px #222);
+  filter: drop-shadow(5px 95px 65px #222);
+}
+#projects .card-img-top {
+  border: 10px solid #D4AF8E;
+}
+#projects .card-img-top.even {
+  border-color: #272530;
+}
+.section-header {
+  padding-bottom: 6px;
+  position: relative;
+  margin: 30px 0;
+}
+.section-header:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 4px;
+  width: 130px;
+  background: #D4AF8E;
+  border-radius: 2px;
+  margin-left: -65px;
+}
+.about-img {
+  background-image: url(../images/About_bg[with-tint].png);
+  background-size: 100%;
+  color: white;
+}
+#contact-us #contact-us-form-container {
+  background-image: url(../images/Dotted_World-Map.svg);
+  background-color: #272530;
+  background-size: 100%;
+  background-position: center;
+  color: #fff;
+}
+#contact-us #contact-us-form-container input,
+#contact-us #contact-us-form-container button {
+  border-radius: 0;
+  color: white;
+}
+#contact-us #contact-us-form-container input[type=text],
+#contact-us #contact-us-form-container input[type=email] {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #D4AF8E;
+}
+#contact-us #contact-us-form-container input[type=text]::placeholder,
+#contact-us #contact-us-form-container input[type=email]::placeholder {
+  color: #888;
+}
+#contact-us #contact-us-form-container input[type=submit],
+#contact-us #contact-us-form-container button[type=submit] {
+  background: #272530;
+  border: 2px solid #D4AF8E;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+#contact-us #contact-info {
+  background: #D4AF8E;
+}
+#contact-us #contact-info .social-networks img {
+  height: 24px;
+}
+#work {
+  margin-top: 30px;
+}

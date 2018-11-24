@@ -1,0 +1,145 @@
+@color-cream: #D4AF8E;
+@color-dark-blue: #272530;
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: @opacity;
+	-moz-opacity: @opacity;
+	opacity: @opacity;
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.navbar-brand {
+    #logo-svg {
+        fill: #FFF;
+    }
+}
+#container {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.up-arrow {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: @color-cream;
+    .opacity(0.9);
+    z-index: 100;
+    cursor: pointer;
+    visibility: hidden;
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#be1e2d, #8f0203);
+    color: #fff;
+    text-align: center;
+    .pipe {
+        @width: 4px;
+        background: @color-cream;
+        width: @width;
+        height: 35px;
+        display: inline-block;
+        border-radius: @width/2;
+    }
+    .down-arrow {
+        @down-arrow-size: 40px;
+        display: inline-block;
+        width: @down-arrow-size;
+        height: @down-arrow-size;
+        background: @color-cream;
+        cursor: pointer;
+    }
+}
+
+#hero-image {
+    width: 75%;
+    -webkit-filter: drop-shadow(5px 95px 65px #222);
+    filter:         drop-shadow(5px 95px 65px #222);
+}
+
+#projects {
+    .card-img-top {
+        border: 10px solid @color-cream;
+        &.even {
+            border-color: @color-dark-blue;
+        }
+    }
+}
+
+.section-header {
+    padding-bottom: 6px;
+    position: relative;
+    margin: 30px 0;
+    &:before {
+        @width: 130px;
+        content : "";
+        position: absolute;
+        left    : 50%;
+        bottom  : 0;
+        height  : 4px;
+        width   : @width;
+        background: @color-cream;
+        border-radius: 2px;
+        margin-left: -@width/2;
+    }
+}
+
+.about-img {
+    background-image: url(../images/About_bg[with-tint].png);
+    background-size: 100%;
+    color: white;
+}
+
+#contact-us {
+    #contact-us-form-container {
+        background-image: url(../images/Dotted_World-Map.svg);
+        background-color: @color-dark-blue;
+        background-size: 100%;
+        background-position: center;
+        color: #fff;
+        input, button {
+            border-radius: 0;
+            color: white;
+        }
+        input[type=text], input[type=email]  {
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid @color-cream;
+            &::placeholder {
+                color: #888;
+            }
+        }
+        input[type=submit], button[type=submit]  {
+            background: @color-dark-blue;
+            border: 2px solid @color-cream;
+            border-radius: 30px;
+            padding: 0 20px;
+        }
+    }
+    #contact-info {
+        background: @color-cream;
+        .social-networks img {
+            height: 24px;
+        }
+    }
+}
+
+
+#work {
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+}
