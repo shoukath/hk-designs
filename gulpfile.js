@@ -13,9 +13,6 @@ gulp.task('less', function () {
 
 gulp.task('scripts', function () {
   return gulp.src('./scripts/**/*.js')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
     .pipe(gulp.dest('./public/scripts'));
 });
 
@@ -25,4 +22,4 @@ gulp.task('images', () =>
         .pipe(gulp.dest('public/images'))
 );
 
-gulp.task('default', ['less', 'images']);
+gulp.task('default', ['less', 'images', 'scripts']);
