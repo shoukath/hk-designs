@@ -1,5 +1,18 @@
 @color-cream: #D4AF8E;
 @color-dark-blue: #272530;
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: @opacity;
 	-moz-opacity: @opacity;
@@ -68,6 +81,8 @@
     width: 75%;
     -webkit-filter: drop-shadow(5px 95px 65px #222);
     filter:         drop-shadow(5px 95px 65px #222);
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
 }
 
 #projects {
