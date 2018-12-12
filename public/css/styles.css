@@ -1,3 +1,14 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 .navbar-brand #logo-svg {
   fill: #FFF;
   height: 65px;
@@ -49,6 +60,8 @@
   width: 75%;
   -webkit-filter: drop-shadow(5px 95px 65px #222);
   filter: drop-shadow(5px 95px 65px #222);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 #projects .card-img-top {
   border: 10px solid #D4AF8E;
@@ -76,6 +89,7 @@
   background-image: url(../images/About_bg[with-tint].png);
   background-size: 100%;
   color: white;
+  min-height: 350px;
 }
 #contact-us #contact-us-form-container {
   background-image: url(../images/Dotted_World-Map.svg);
@@ -85,18 +99,21 @@
   color: #fff;
 }
 #contact-us #contact-us-form-container input,
-#contact-us #contact-us-form-container button {
+#contact-us #contact-us-form-container button,
+#contact-us #contact-us-form-container textarea {
   border-radius: 0;
   color: white;
 }
 #contact-us #contact-us-form-container input[type=text],
-#contact-us #contact-us-form-container input[type=email] {
+#contact-us #contact-us-form-container input[type=email],
+#contact-us #contact-us-form-container textarea {
   background: transparent;
   border: none;
   border-bottom: 3px solid #D4AF8E;
 }
 #contact-us #contact-us-form-container input[type=text]::placeholder,
-#contact-us #contact-us-form-container input[type=email]::placeholder {
+#contact-us #contact-us-form-container input[type=email]::placeholder,
+#contact-us #contact-us-form-container textarea::placeholder {
   color: #888;
 }
 #contact-us #contact-us-form-container input[type=submit],
