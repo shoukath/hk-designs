@@ -145,6 +145,23 @@
   background: #272530;
   color: #D4AF8E;
 }
+.softwares-used img {
+  height: 36px;
+}
+.project-nav {
+  height: 48px;
+}
+.project-nav .arrow {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: gray;
+  float: left;
+}
+.project-nav .arrow.next {
+  background: #D4AF8E;
+  float: right;
+}
 @media (max-width: 767.98px) {
   .right-pane {
     order: -1;

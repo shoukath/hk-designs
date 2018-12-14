@@ -178,6 +178,25 @@
     background: @color-dark-blue;
     color: @color-cream;
 }
+.softwares-used img {
+    height: 36px;
+}
+
+.project-nav {
+    @height: 48px;
+    height: @height;
+    .arrow {
+        height: @height;
+        width: @height;
+        border-radius: 50%;
+        background: gray;
+        float: left;
+        &.next {
+            background: @color-cream;
+            float: right;
+        }
+    }
+}
 @media (max-width: 767.98px) {
     .right-pane {
         order: -1;
