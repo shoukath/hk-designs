@@ -13,6 +13,9 @@
   fill: #FFF;
   height: 65px;
 }
+.navbar-brand #logo-svg.black {
+  fill: #000;
+}
 #container {
   overflow-y: scroll;
   height: 100vh;
@@ -62,6 +65,9 @@
   filter: drop-shadow(5px 95px 65px #222);
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
+}
+#projects .card.gigglezz {
+  cursor: pointer;
 }
 #projects .card-img-top {
   border: 10px solid #D4AF8E;
@@ -131,4 +137,16 @@
 }
 #work {
   margin-top: 30px;
+}
+.left-pane img {
+  width: 100%;
+}
+.project-description {
+  background: #272530;
+  color: #D4AF8E;
+}
+@media (max-width: 767.98px) {
+  .right-pane {
+    order: -1;
+  }
 }

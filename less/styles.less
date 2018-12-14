@@ -28,6 +28,9 @@
     #logo-svg {
         fill: #FFF;
         height: 65px;
+        &.black {
+            fill: #000;
+        }
     }
 }
 #container {
@@ -86,6 +89,9 @@
 }
 
 #projects {
+    .card.gigglezz {
+        cursor: pointer;
+    }
     .card-img-top {
         border: 10px solid @color-cream;
         &.even {
@@ -159,4 +165,21 @@
 }
 
 @media screen and (min-width: 768px) {
+}
+
+
+// Gigglezz
+.left-pane {
+    img {
+        width: 100%;
+    }
+}
+.project-description {
+    background: @color-dark-blue;
+    color: @color-cream;
+}
+@media (max-width: 767.98px) {
+    .right-pane {
+        order: -1;
+    }
 }
