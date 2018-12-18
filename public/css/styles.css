@@ -138,6 +138,11 @@
 #work {
   margin-top: 30px;
 }
+@media (max-width: 575.98px) {
+  #hero-image {
+    width: 90%;
+  }
+}
 .left-pane img {
   width: 100%;
 }
