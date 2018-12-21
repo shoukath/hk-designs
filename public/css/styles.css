@@ -9,6 +9,14 @@
     transform: translatey(0px);
   }
 }
+ul.two-columns {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.text-cream {
+  color: #D4AF8E;
+}
 .navbar-brand #logo-svg {
   fill: #FFF;
   height: 65px;
@@ -133,6 +141,9 @@
   background: #D4AF8E;
 }
 #contact-us #contact-info .social-networks img {
+  height: 24px;
+}
+.social-networks img {
   height: 24px;
 }
 #work {
